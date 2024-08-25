@@ -1,0 +1,159 @@
+/* Importing the Poppins font from Google Fonts */
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+
+/* Apply global styles to all elements */
+* {
+  font-family: "Poppins", sans-serif; 
+  margin: 0; 
+  padding: 0; 
+  box-sizing: border-box; 
+}
+
+
+/* Define CSS variables for consistent color usage */
+:root {
+  --primary-color: #1b2e35; 
+  --secondry-color: #2c97e9; 
+  --white-color: #fff; 
+  --gray-color: #ffffffa1; 
+  --black-color: #0a0a0a; 
+}
+
+/* Style for the body of the document */
+body {
+  width: 100%; 
+  min-height: 500px; 
+  height: 100vh; 
+  background-color: rgba(7, 165, 228, 0.518); 
+  background-size: cover; 
+  display: flex; 
+  justify-content: center; 
+  align-items: center; 
+}
+
+/* Style for the main app container */
+.App {
+  text-align: center; 
+  width: 1000px; 
+  height: 600px; 
+}
+
+/* Style for the main heading */
+h1 {
+  color: var(--white-color); 
+  margin-bottom: 0.5rem; 
+  font-size: 1.75rem; 
+  text-decoration: underline; 
+}
+
+/* Style for the todo wrapper container */
+.TodoWrapper {
+  background: var(--primary-color); 
+  padding: 2rem; 
+  border-radius: 5px; 
+  -webkit-box-shadow: 0 0 1.0714rem rgba(0, 0, 0, 0.1); 
+  box-shadow: 0 0 1.0714rem rgba(0, 0, 0, 0.1); 
+  overflow-y: auto; 
+}
+
+/* Style for the todo form */
+.TodoForm {
+  width: 100%; 
+  margin-bottom: 1rem; 
+}
+
+/* Style for the input field in the todo form */
+.todo-input {
+  outline: none; 
+  background: none; 
+  border: 1px solid var(--secondry-color); 
+  padding: 0.5rem 1rem; 
+  margin-top: 3rem; 
+  margin-bottom: 2rem; 
+  width: 400px; 
+  color: var(--white-color); 
+  height: 50px; 
+}
+
+/* Style for the input and icon container */
+.inputs {
+  display: flex; 
+  justify-content: center; 
+  color: #ffffff; 
+  margin-top: 5px; 
+}
+
+/* Style for the icons container */
+.icons {
+  display: flex; 
+  justify-content: center; 
+  padding: 0.5rem 1rem; 
+  margin-top: 1rem; 
+  margin-bottom: 2rem; 
+}
+
+/* Placeholder text style for the input field */
+.todo-input::placeholder {
+  color: var(--gray-color); 
+}
+
+/* Style for the add button */
+.todo-btn {
+  background: var(--secondry-color); 
+  color: var(--white-color); 
+  border: none; 
+  padding: 0.55rem; 
+  cursor: pointer; 
+  height: 50px; 
+  margin-right: 40px; 
+}
+
+/* Style for the clear list button */
+.clearbtn {
+  background: var(--white-color); 
+  color: var(--black-color); 
+  border: none; 
+  padding: 0.55rem; 
+  cursor: pointer; 
+  height: 40px; 
+  border-radius: 5px; 
+}
+
+/* Style for individual todo items */
+.Todo {
+  display: flex; 
+  justify-content: space-between; 
+  align-items: center; 
+  background: var(--secondry-color); 
+  width: 400px; 
+  height: 70px; 
+  color: var(--white-color); 
+  padding: 0.75rem 1rem; 
+  border-radius: 5px; 
+  margin-bottom: 1rem; 
+}
+
+/* Style for the trash icon */
+.fa-trash {
+  margin-left: 0.75rem; 
+  justify-content: space-between; 
+}
+
+/* Style for incomplete todos */
+.incompleted {
+  color: var(--white-color); 
+  cursor: pointer; 
+}
+
+/* Style for completed todos */
+.completed {
+  color: var(--gray-color); 
+  text-decoration: line-through; 
+  cursor: pointer; 
+}
+
+/* Style for edit and delete icons */
+.edit-icon,
+.delete-icon {
+  cursor: pointer; 
+}
